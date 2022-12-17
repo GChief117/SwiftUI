@@ -2,7 +2,7 @@
 //  AnimationApp.swift
 //  Animation
 //
-//  Created by Gunnar Beck on 12/4/22.
+//  Created by Nelson, Gunnar on 11/17/22.
 //
 
 import SwiftUI
