@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92311F4A28C161600004974B /* ThreeDVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311F4928C161600004974B /* ThreeDVisionApp.swift */; };
+		92311F4C28C161600004974B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311F4B28C161600004974B /* ContentView.swift */; };
+		92311F4E28C161610004974B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92311F4D28C161610004974B /* Assets.xcassets */; };
+		92311F5128C161610004974B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92311F5028C161610004974B /* Preview Assets.xcassets */; };
+		92311F5B28C161610004974B /* _DVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311F5A28C161610004974B /* _DVisionTests.swift */; };
+		92311F6528C161610004974B /* _DVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311F6428C161610004974B /* _DVisionUITests.swift */; };
+		92311F6728C161610004974B /* _DVisionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311F6628C161610004974B /* _DVisionUITestsLaunchTests.swift */; };
+		92311FAF28C23BD20004974B /* ARDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FAE28C23BD20004974B /* ARDataProvider.swift */; };
+		92311FB128C23BE90004974B /* EnvironmentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FB028C23BE90004974B /* EnvironmentVariables.swift */; };
+		92311FB328C23C6C0004974B /* ARReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FB228C23C6C0004974B /* ARReceiver.swift */; };
+		92311FB528C23C740004974B /* MetalPointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FB428C23C740004974B /* MetalPointCloud.swift */; };
+		92311FB728C23C830004974B /* MetalTextureViewCoefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FB628C23C830004974B /* MetalTextureViewCoefs.swift */; };
+		92311FB928C23C900004974B /* MetalTextureViewConfidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FB828C23C900004974B /* MetalTextureViewConfidence.swift */; };
+		92311FBB28C23CA60004974B /* MetalTextureViewDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FBA28C23CA60004974B /* MetalTextureViewDepth.swift */; };
+		92311FBD28C23CB20004974B /* MetalViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FBC28C23CB20004974B /* MetalViewSample.swift */; };
+		92311FBF28C23CBB0004974B /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 92311FBE28C23CBB0004974B /* shaders.metal */; };
+		92311FF728C244780004974B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FF628C244780004974B /* ContentViewModel.swift */; };
+		92311FF928C244890004974B /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FF828C244890004974B /* FrameView.swift */; };
+		92311FFB28C244980004974B /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FFA28C244980004974B /* FrameManager.swift */; };
+		92311FFD28C244A30004974B /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92311FFC28C244A30004974B /* CameraManager.swift */; };
+		9279C5C728DB683300D12DD8 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9279C5C628DB683300D12DD8 /* Property List.plist */; };
+		92A9668728EF5A2D0021B4BE /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9668628EF5A2D0021B4BE /* opencv2.framework */; };
+		92A9668D28EF5AE10021B4BE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9668828EF5AE10021B4BE /* CoreFoundation.framework */; };
+		92A9668E28EF5AE10021B4BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9668928EF5AE10021B4BE /* CoreGraphics.framework */; };
+		92A9668F28EF5AE10021B4BE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9668A28EF5AE10021B4BE /* CoreMedia.framework */; };
+		92A9669028EF5AE10021B4BE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9668B28EF5AE10021B4BE /* AssetsLibrary.framework */; };
+		92A9669128EF5AE10021B4BE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9668C28EF5AE10021B4BE /* Accelerate.framework */; };
+		92A9669528EF67F70021B4BE /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92A9669428EF67F70021B4BE /* OpenCVWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92311F5728C161610004974B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92311F3E28C161600004974B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92311F4528C161600004974B;
+			remoteInfo = 3DVision;
+		};
+		92311F6128C161610004974B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92311F3E28C161600004974B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92311F4528C161600004974B;
+			remoteInfo = 3DVision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92311F4628C161600004974B /* 3d-vision-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3d-vision-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92311F4928C161600004974B /* ThreeDVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDVisionApp.swift; sourceTree = "<group>"; };
+		92311F4B28C161600004974B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92311F4D28C161610004974B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92311F5028C161610004974B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92311F5628C161610004974B /* 3d-vision-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3d-vision-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92311F5A28C161610004974B /* _DVisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DVisionTests.swift; sourceTree = "<group>"; };
+		92311F6028C161610004974B /* 3d-vision-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3d-vision-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92311F6428C161610004974B /* _DVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DVisionUITests.swift; sourceTree = "<group>"; };
+		92311F6628C161610004974B /* _DVisionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DVisionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92311FAE28C23BD20004974B /* ARDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDataProvider.swift; sourceTree = "<group>"; };
+		92311FB028C23BE90004974B /* EnvironmentVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVariables.swift; sourceTree = "<group>"; };
+		92311FB228C23C6C0004974B /* ARReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARReceiver.swift; sourceTree = "<group>"; };
+		92311FB428C23C740004974B /* MetalPointCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPointCloud.swift; sourceTree = "<group>"; };
+		92311FB628C23C830004974B /* MetalTextureViewCoefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureViewCoefs.swift; sourceTree = "<group>"; };
+		92311FB828C23C900004974B /* MetalTextureViewConfidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureViewConfidence.swift; sourceTree = "<group>"; };
+		92311FBA28C23CA60004974B /* MetalTextureViewDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureViewDepth.swift; sourceTree = "<group>"; };
+		92311FBC28C23CB20004974B /* MetalViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewSample.swift; sourceTree = "<group>"; };
+		92311FBE28C23CBB0004974B /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		92311FF628C244780004974B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		92311FF828C244890004974B /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		92311FFA28C244980004974B /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		92311FFC28C244A30004974B /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		9279C5C628DB683300D12DD8 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		92A9668628EF5A2D0021B4BE /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		92A9668828EF5AE10021B4BE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		92A9668928EF5AE10021B4BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		92A9668A28EF5AE10021B4BE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		92A9668B28EF5AE10021B4BE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		92A9668C28EF5AE10021B4BE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		92A9669228EF67F60021B4BE /* 3d-vision-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "3d-vision-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		92A9669328EF67F70021B4BE /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		92A9669428EF67F70021B4BE /* OpenCVWrapper.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		92A9669628EF68DD0021B4BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92311F4328C161600004974B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A9668D28EF5AE10021B4BE /* CoreFoundation.framework in Frameworks */,
+				92A9668E28EF5AE10021B4BE /* CoreGraphics.framework in Frameworks */,
+				92A9668F28EF5AE10021B4BE /* CoreMedia.framework in Frameworks */,
+				92A9669028EF5AE10021B4BE /* AssetsLibrary.framework in Frameworks */,
+				92A9669128EF5AE10021B4BE /* Accelerate.framework in Frameworks */,
+				92A9668728EF5A2D0021B4BE /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92311F5328C161610004974B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92311F5D28C161610004974B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92311F3D28C161600004974B = {
+			isa = PBXGroup;
+			children = (
+				92A9669328EF67F70021B4BE /* OpenCVWrapper.h */,
+				92A9669428EF67F70021B4BE /* OpenCVWrapper.mm */,
+				92A9669628EF68DD0021B4BE /* PrefixHeader.pch */,
+				9279C5C628DB683300D12DD8 /* Property List.plist */,
+				92311F8D28C1EF3E0004974B /* Camera */,
+				92311F8C28C1EF350004974B /* Lidar */,
+				92311F4828C161600004974B /* 3d-vision-ios */,
+				92311F5928C161610004974B /* 3d-vision-iosTests */,
+				92311F6328C161610004974B /* 3d-vision-iosUITests */,
+				92311F4728C161600004974B /* Products */,
+				92A9668528EF5A2D0021B4BE /* Frameworks */,
+				92A9669228EF67F60021B4BE /* 3d-vision-ios-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		92311F4728C161600004974B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92311F4628C161600004974B /* 3d-vision-ios.app */,
+				92311F5628C161610004974B /* 3d-vision-iosTests.xctest */,
+				92311F6028C161610004974B /* 3d-vision-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92311F4828C161600004974B /* 3d-vision-ios */ = {
+			isa = PBXGroup;
+			children = (
+				92311F4928C161600004974B /* ThreeDVisionApp.swift */,
+				92311F4D28C161610004974B /* Assets.xcassets */,
+				92311F4F28C161610004974B /* Preview Content */,
+			);
+			path = "3d-vision-ios";
+			sourceTree = "<group>";
+		};
+		92311F4F28C161610004974B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92311F5028C161610004974B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92311F5928C161610004974B /* 3d-vision-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				92311F5A28C161610004974B /* _DVisionTests.swift */,
+			);
+			path = "3d-vision-iosTests";
+			sourceTree = "<group>";
+		};
+		92311F6328C161610004974B /* 3d-vision-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92311F6428C161610004974B /* _DVisionUITests.swift */,
+				92311F6628C161610004974B /* _DVisionUITestsLaunchTests.swift */,
+			);
+			path = "3d-vision-iosUITests";
+			sourceTree = "<group>";
+		};
+		92311F8C28C1EF350004974B /* Lidar */ = {
+			isa = PBXGroup;
+			children = (
+				92311FAE28C23BD20004974B /* ARDataProvider.swift */,
+				92311FB028C23BE90004974B /* EnvironmentVariables.swift */,
+				92311FB228C23C6C0004974B /* ARReceiver.swift */,
+				92311FB428C23C740004974B /* MetalPointCloud.swift */,
+				92311FB628C23C830004974B /* MetalTextureViewCoefs.swift */,
+				92311FB828C23C900004974B /* MetalTextureViewConfidence.swift */,
+				92311FBA28C23CA60004974B /* MetalTextureViewDepth.swift */,
+				92311FBC28C23CB20004974B /* MetalViewSample.swift */,
+				92311FBE28C23CBB0004974B /* shaders.metal */,
+			);
+			path = Lidar;
+			sourceTree = "<group>";
+		};
+		92311F8D28C1EF3E0004974B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				92311FF628C244780004974B /* ContentViewModel.swift */,
+				92311FF828C244890004974B /* FrameView.swift */,
+				92311FFA28C244980004974B /* FrameManager.swift */,
+				92311FFC28C244A30004974B /* CameraManager.swift */,
+				92311F4B28C161600004974B /* ContentView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		92A9668528EF5A2D0021B4BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92A9668C28EF5AE10021B4BE /* Accelerate.framework */,
+				92A9668B28EF5AE10021B4BE /* AssetsLibrary.framework */,
+				92A9668828EF5AE10021B4BE /* CoreFoundation.framework */,
+				92A9668928EF5AE10021B4BE /* CoreGraphics.framework */,
+				92A9668A28EF5AE10021B4BE /* CoreMedia.framework */,
+				92A9668628EF5A2D0021B4BE /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92311F4528C161600004974B /* 3d-vision-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92311F6A28C161610004974B /* Build configuration list for PBXNativeTarget "3d-vision-ios" */;
+			buildPhases = (
+				92311F4228C161600004974B /* Sources */,
+				92311F4328C161600004974B /* Frameworks */,
+				92311F4428C161600004974B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "3d-vision-ios";
+			productName = 3DVision;
+			productReference = 92311F4628C161600004974B /* 3d-vision-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92311F5528C161610004974B /* 3d-vision-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92311F6D28C161610004974B /* Build configuration list for PBXNativeTarget "3d-vision-iosTests" */;
+			buildPhases = (
+				92311F5228C161610004974B /* Sources */,
+				92311F5328C161610004974B /* Frameworks */,
+				92311F5428C161610004974B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92311F5828C161610004974B /* PBXTargetDependency */,
+			);
+			name = "3d-vision-iosTests";
+			productName = 3DVisionTests;
+			productReference = 92311F5628C161610004974B /* 3d-vision-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92311F5F28C161610004974B /* 3d-vision-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92311F7028C161610004974B /* Build configuration list for PBXNativeTarget "3d-vision-iosUITests" */;
+			buildPhases = (
+				92311F5C28C161610004974B /* Sources */,
+				92311F5D28C161610004974B /* Frameworks */,
+				92311F5E28C161610004974B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92311F6228C161610004974B /* PBXTargetDependency */,
+			);
+			name = "3d-vision-iosUITests";
+			productName = 3DVisionUITests;
+			productReference = 92311F6028C161610004974B /* 3d-vision-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92311F3E28C161600004974B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					92311F4528C161600004974B = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1400;
+					};
+					92311F5528C161610004974B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 92311F4528C161600004974B;
+					};
+					92311F5F28C161610004974B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 92311F4528C161600004974B;
+					};
+				};
+			};
+			buildConfigurationList = 92311F4128C161600004974B /* Build configuration list for PBXProject "3d-vision-ios" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92311F3D28C161600004974B;
+			productRefGroup = 92311F4728C161600004974B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92311F4528C161600004974B /* 3d-vision-ios */,
+				92311F5528C161610004974B /* 3d-vision-iosTests */,
+				92311F5F28C161610004974B /* 3d-vision-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92311F4428C161600004974B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C5C728DB683300D12DD8 /* Property List.plist in Resources */,
+				92311F5128C161610004974B /* Preview Assets.xcassets in Resources */,
+				92311F4E28C161610004974B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92311F5428C161610004974B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92311F5E28C161610004974B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92311F4228C161600004974B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92311FBD28C23CB20004974B /* MetalViewSample.swift in Sources */,
+				92311FB928C23C900004974B /* MetalTextureViewConfidence.swift in Sources */,
+				92311FF928C244890004974B /* FrameView.swift in Sources */,
+				92311FB728C23C830004974B /* MetalTextureViewCoefs.swift in Sources */,
+				92311FFD28C244A30004974B /* CameraManager.swift in Sources */,
+				92311FB528C23C740004974B /* MetalPointCloud.swift in Sources */,
+				92A9669528EF67F70021B4BE /* OpenCVWrapper.mm in Sources */,
+				92311FFB28C244980004974B /* FrameManager.swift in Sources */,
+				92311F4C28C161600004974B /* ContentView.swift in Sources */,
+				92311FAF28C23BD20004974B /* ARDataProvider.swift in Sources */,
+				92311FB128C23BE90004974B /* EnvironmentVariables.swift in Sources */,
+				92311F4A28C161600004974B /* ThreeDVisionApp.swift in Sources */,
+				92311FF728C244780004974B /* ContentViewModel.swift in Sources */,
+				92311FBB28C23CA60004974B /* MetalTextureViewDepth.swift in Sources */,
+				92311FB328C23C6C0004974B /* ARReceiver.swift in Sources */,
+				92311FBF28C23CBB0004974B /* shaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92311F5228C161610004974B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92311F5B28C161610004974B /* _DVisionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92311F5C28C161610004974B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92311F6728C161610004974B /* _DVisionUITestsLaunchTests.swift in Sources */,
+				92311F6528C161610004974B /* _DVisionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92311F5828C161610004974B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92311F4528C161600004974B /* 3d-vision-ios */;
+			targetProxy = 92311F5728C161610004974B /* PBXContainerItemProxy */;
+		};
+		92311F6228C161610004974B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92311F4528C161600004974B /* 3d-vision-ios */;
+			targetProxy = 92311F6128C161610004974B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		92311F6828C161610004974B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92311F6928C161610004974B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92311F6B28C161610004974B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"3d-vision-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = W5SGMW2JG6;
+				ENABLE_PREVIEWS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.33ios;
+				PRODUCT_NAME = "3d-vision-ios";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "3d-vision-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92311F6C28C161610004974B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"3d-vision-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = W5SGMW2JG6;
+				ENABLE_PREVIEWS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.33ios;
+				PRODUCT_NAME = "3d-vision-ios";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "3d-vision-ios-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92311F6E28C161610004974B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PJLLP9AKM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Grainger.-DVisionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3d-vision-ios.app/3d-vision-ios";
+			};
+			name = Debug;
+		};
+		92311F6F28C161610004974B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PJLLP9AKM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Grainger.-DVisionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3d-vision-ios.app/3d-vision-ios";
+			};
+			name = Release;
+		};
+		92311F7128C161610004974B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZMW769847E;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Grainger.-DVisionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "3d-vision-ios";
+			};
+			name = Debug;
+		};
+		92311F7228C161610004974B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PJLLP9AKM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Grainger.-DVisionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "3d-vision-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92311F4128C161600004974B /* Build configuration list for PBXProject "3d-vision-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92311F6828C161610004974B /* Debug */,
+				92311F6928C161610004974B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92311F6A28C161610004974B /* Build configuration list for PBXNativeTarget "3d-vision-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92311F6B28C161610004974B /* Debug */,
+				92311F6C28C161610004974B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92311F6D28C161610004974B /* Build configuration list for PBXNativeTarget "3d-vision-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92311F6E28C161610004974B /* Debug */,
+				92311F6F28C161610004974B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92311F7028C161610004974B /* Build configuration list for PBXNativeTarget "3d-vision-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92311F7128C161610004974B /* Debug */,
+				92311F7228C161610004974B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92311F3E28C161600004974B /* Project object */;
+}
